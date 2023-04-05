@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-
+ 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,28 +21,42 @@ rel="stylesheet">
 </head>
 <body>
 
-      <header class="page-heder" >
-     <div class="container">
-     <div class="header-container">
-      <nav class="header-nav">
-         <a href="./index.html" 
-         class="logo-first">Web<span  
-         class="logo-second">Studio</span>
-      </a>     
-         <ul class="header-menu">
-            <li><a class="site-nav" href="index.html">Studio</a></li>
-            <li><a class="site-nav-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="site-nav" href="">Contacts</a></li>
-         </ul>
-        </nav>
-        <address>
-            <ul class="header-menu">
-                <li ><a class="box-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li ><a class="box-address" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-      </div>
-      </header>
+  <header class="page-heder" >
+ <div class="container">
+ <div class="header-container">
+  <nav class="header-nav">
+     <a href="./index.html" 
+     class="logo-first">Web<span  
+     class="logo-second">Studio</span>
+  </a>     
+     <ul class="header-menu">
+        <li><a class="site-nav" href="index.html">Studio</a></li>
+        <li><a class="site-nav-portfolio" href="portfolio.html">Portfolio</a></li>
+        <li><a class="site-nav" href="">Contacts</a></li>
+     </ul>
+    </nav>
+    <address>
+        <ul class="header-menu">
+          <div class="heder-adres">
+            <li ><a class="box-address" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li ><a class="box-address" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </div>
+          </ul>
+    </address>
+  <div class="box-heder-icom">
+    <button class="header-burger js-open-menu" type="button">
+      <svg width="29.54px" height="18.62px">
+        <use href="./images/icons.svg#charm_menu-hamburger"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- mobile menu  -->
+  <div class="mobile-menu js-menu-container">
+    <button class="js-close-menu" type="button">close</button>
+  </div>
+  </div>
+  </div>
+  </header>
 <main>
     <section class="portfolio-main">
       <div class="container">
@@ -290,20 +304,20 @@ rel="stylesheet">
       </div>
 
       <form class="subtitle-box" name="subscribe">
-        <div class="buton-subscr">
-          <h3 class="subtitle-footer">Subscribe</h3>
-          <label for="email" class="email-sub"></label>
-          <span class="contein-subsc"></span>
-          <input class="content-email" type="email" name="user-email" id="user-email" placeholder="E-mail" required />
+        <h3 class="subtitle-footer">Subscribe</h3>
+      
+        <div class="box-button-sub">
+          <input class="content-email" type="email" name="users-email" id="users-email" placeholder="E-mail" required />
           <button type="submit" class="button-subs">Subscribe
-            <svg class="telegram" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon"></use>
+            <svg class="telegram">
+              <use href="./images/icons.svg#icon-frame"></use>
             </svg>
           </button>
-          </span>
         </div>
       
       </form>
+      </div>
+
       
       
       
@@ -313,5 +327,6 @@ rel="stylesheet">
 
 
   </footer>
+  <script src="./js/mobile-menu.js"></script>
  </body>
 </html>
