@@ -262,78 +262,164 @@ background-color: transparent;
 border: none;
 }
 
-
-
 /* mobile menu */
+@media (min-width: 768px) {
+     .mobile-menu {
+     display: none;
+     }
+}
+
+
 @media (max-width: 768px) {
    .mobile-menu {
-   width: 100%;
-   max-width: 428px;
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   background-color: var(--color-inverted);
-   transform: translateX(100%);
-   transition: transform 1s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-inverted);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
 @media (max-width: 768px) {
    .mobile-menu.is-open{
-   transform: translateX(0);
-   opacity: 1;
-   visibility: visible;
-   pointer-events: auto;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
    }
 }
 
 
+
 @media (max-width: 768px) {
     .mobile-menu-container {
-        padding: 80px 35px 40px 40px;
-    }
-}
-
-
- 
-@media (max-width: 768px) {
-    .menu-studio-tel {
-      position: relative;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-      color: var(--color-hover);
-      text-decoration: none;
-      display: block;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    height: 100vh;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
     }
 }
 
 @media (max-width: 768px) {
-    .menu-tel {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--color-primary);
-        text-decoration: none;
+    .menu-comand {
+        margin-bottom: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tel-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         list-style: none;
-        display: block;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
+.menu-studio-tel::after {
+width: 100%;
+height: 4px;
+background-color: #404BBF;
+border-radius: 2px;
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+}
 
 
+.menu-studio-tel{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: var(--color-hover);
+text-decoration: none;
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-tel{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: var(--color-primary);
+text-decoration: none;
+list-style: none;
+display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
+.header-menu-tel{
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin-bottom: 48px;
+list-style: none;
+}
 
 
+.box-address-tel {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: var(--color-button);
+text-decoration: none;
+}
 
+.box-address-mail {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.box-media-tel {
+display: flex;
+gap: 56px;
+align-items: flex-end;
+flex-wrap: wrap;
+}
+
+.social-media-tel {
+list-style: none;
+}
+
+.link-media-tel {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: var(--color-button);
+border-radius: 50%;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.imag-media-tel {
+width: 24px;
+    height: 24px;
+    fill: var(--color-team);
+}
 
 /*  2 частина з кнопкою   */
 .hero-section {
@@ -889,6 +975,8 @@ margin-top: 0px;
 margin-bottom: 16px;
 }
  
+
+/* Baner */
 
 .footer-media {
     margin-left: 120px;
