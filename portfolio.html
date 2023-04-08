@@ -51,8 +51,60 @@ rel="stylesheet">
     </button>
   </div>
   <!-- mobile menu  -->
+  
   <div class="mobile-menu js-menu-container">
-    <button class="js-close-menu" type="button">close</button>
+    <div class="mobile-menu-container">
+      <button class="modal-close js-close-menu" type="button" data-modal-clos>
+        <svg class="icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="menu-comand">
+        <ul class="tel-menu">
+          <li><a class="menu-tel" href="index.html">Studio</a></li>
+          <li><a class="menu-studio-tel" href="portfolio.html">Portfolio</a></li>
+          <li><a class="menu-tel" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address>
+        <ul class="header-menu-tel">
+          <li><a class="box-address-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li><a class="box-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+      </address>
+      <ul class="box-media-tel">
+        <li class="social-media-tel">
+          <a class="link-media-tel" href="#">
+            <svg class="imag-media-tel">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-tel">
+          <a class="link-media-tel" href="#">
+            <svg class="imag-media-tel">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-tel">
+          <a class="link-media-tel" href="#">
+            <svg class="imag-media-tel">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-tel">
+          <a class="link-media-tel" href="#">
+            <svg class="imag-media-tel">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+  
   </div>
   </div>
   </div>
@@ -83,7 +135,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img banking.jpg" alt="banking">
+        <img class="foto-program" srcset="./images/img banking.jpg 1x, ./images/img banking@2x.jpg 2x" src="./images/img banking.jpg" alt="banking">
         <div class="master-description">
           <p class="text">
           14 Stylish and User-Friendly App Design Concepts · 
@@ -102,7 +154,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img cashless.jpg" alt="cashless">
+        <img class="foto-program" srcset="./images/img cashless.jpg 1x, ./images/img cashless@2x.jpg 2x" src="./images/img cashless.jpg" alt="cashless">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -121,7 +173,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img meditaion.jpg" alt="meditaion">
+        <img class="foto-program" srcset="./images/img meditaion.jpg 1x, ./images/img meditaion@2x.jpg 2x" src="./images/img meditaion.jpg" alt="meditaion">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -140,7 +192,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img taxi.jpg" alt="taxi">
+        <img class="foto-program" srcset="./images/img taxi.jpg 1x, ./images/img taxi@2x.jpg 2x" src="./images/img taxi.jpg" alt="taxi">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -159,7 +211,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img screen.jpg" alt="screen">
+        <img class="foto-program" srcset="./images/img screen.jpg 1x, ./images/img screen@2x.jpg 2x" src="./images/img screen.jpg" alt="screen">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -178,7 +230,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img courses.jpg" alt="courses">
+        <img class="foto-program" srcset="./images/img courses.jpg 1x, ./images/img courses@2x.jpg 2x" src="./images/img courses.jpg" alt="courses">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -197,7 +249,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img instagram.jpg" alt="instagram">
+        <img class="foto-program" srcset="./images/img instagram.jpg 1x, ./images/img instagram@2x.jpg 2x" src="./images/img instagram.jpg" alt="instagram">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -216,7 +268,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img food.jpg" alt="food">
+        <img class="foto-program" srcset="./images/img food.jpg 1x, ./images/img food@2x.jpg 2x" src="./images/img food.jpg" alt="food">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -235,7 +287,7 @@ rel="stylesheet">
       <li class="box-aside-port">
         <a href="#" class="program">
           <div class="master-images">
-        <img class="foto-program" src="./images/img coffee.jpg" alt="coffee">
+        <img class="foto-program" srcset="./images/img coffee.jpg 1x, ./images/img coffee@2x.jpg 2x" src="./images/img coffee.jpg" alt="coffee">
         <div class="master-description">
           <p class="text">
             14 Stylish and User-Friendly App Design Concepts ·
@@ -262,7 +314,7 @@ rel="stylesheet">
     <div class="container footer"> 
       <div class="future-title"> 
    <a href="./index.html" 
-   class="logo-first">Web<span  
+   class="logo-first-two">Web<span  
    class="logo-third">Studio</span></a>     
      <p class="footer-slogan">Increase the flow of customers and 
       sales for your business with digital marketing
